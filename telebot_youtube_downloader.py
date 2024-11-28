@@ -1,9 +1,20 @@
 import telebot
 import yt_dlp
 import os
+from dotenv import load_dotenv
 
-# Replace with your Telegram Bot Token
-BOT_TOKEN = ''
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the Telegram Bot token from environment variables
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+# Ensure the BOT_TOKEN is being correctly fetched
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN is missing. Please set it in the .env file.")
+
+# # Replace with your Telegram Bot Token
+# BOT_TOKEN = ''
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Directory for temporary downloads
