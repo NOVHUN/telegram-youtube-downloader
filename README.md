@@ -3,7 +3,7 @@
 ## Overview
 
 This bot allows users to download YouTube videos or audio files directly from Telegram.  
-It is implemented in Python using the `telebot` and `yt-dlp` libraries.
+It is implemented in Python using the `telebot`, `python-dotenv` and `yt-dlp` libraries.
 
 ---
 
@@ -23,7 +23,7 @@ Before setting up the bot, ensure you have the following:
 2. Required Python libraries:  
    - Install them using the command:  
      ```bash
-     pip install pyTelegramBotAPI yt-dlp
+     pip install pyTelegramBotAPI yt-dlp python-dotenv
      ```
 
 3. [FFmpeg](https://ffmpeg.org/) installed for video and audio processing.  
